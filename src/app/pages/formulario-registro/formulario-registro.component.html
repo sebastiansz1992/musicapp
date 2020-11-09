@@ -1,1 +1,63 @@
-<p>formulario-registro works!</p>
+<div class="container padding-5">
+    <mat-card>
+        <form [formGroup]="formRegistro">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 margin-2">
+                    <mat-form-field class="full-width">
+                        <mat-label>Nombre completo:</mat-label>
+                        <input formControlName="nombreCompleto" matInput placeholder="Por favor ingrese el nombre completo...">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 margin-2">
+                    <mat-form-field class="full-width">
+                        <mat-label>Correo electrónico:</mat-label>
+                        <input formControlName="correoElectronico" type="email" matInput placeholder="Por favor ingrese el correo electrónico...">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 margin-2">
+                    <mat-form-field class="full-width">
+                        <mat-label>Nombre de usuario:</mat-label>
+                        <input formControlName="nombreUsuario" matInput placeholder="Por favor ingrese el nombre de usuario...">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 margin-2">
+                    <mat-form-field class="full-width">
+                        <mat-label>Contraseña:</mat-label>
+                        <input formControlName="contrasenia" type="password" matInput placeholder="Por favor ingrese una contraseña...">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 margin-2">
+                    <mat-form-field class="full-width">
+                        <mat-label>Confirmar contraseña:</mat-label>
+                        <input formControlName="confirmarContrasenia" type="password" matInput placeholder="Por favor confirme la contraseña...">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 margin-2 margin-bottom-2">
+                    <button class="full-width" (click)="registrarse()" mat-raised-button color="primary">Registrarse</button>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </form>
+    </mat-card>
+</div>

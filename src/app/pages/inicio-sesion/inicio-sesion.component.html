@@ -1,6 +1,6 @@
 <div class="container padding-5">
     <mat-card>
-        <form class="example-form">
+        <form [formGroup]="formInicioSesion">
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6 margin-2">
@@ -13,7 +13,7 @@
                 <div class="col-md-6 margin-2">
                     <mat-form-field class="full-width">
                         <mat-label>Nombre de usuario:</mat-label>
-                        <input matInput placeholder="Por favor ingrese el usuario...">
+                        <input formControlName="nombreUsuario" matInput placeholder="Por favor ingrese el usuario...">
                     </mat-form-field>
                 </div>
                 <div class="col-md-3"></div>
@@ -23,7 +23,7 @@
                 <div class="col-md-6 margin-2">
                     <mat-form-field class="full-width">
                         <mat-label>Contraseña</mat-label>
-                        <input type="password" matInput placeholder="Por favor ingrese la contraseña...">
+                        <input formControlName="contrasenia" type="password" matInput placeholder="Por favor ingrese la contraseña...">
                     </mat-form-field>
                 </div>
                 <div class="col-md-3"></div>
@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6 margin-2 margin-bottom-2">
-                    <button class="full-width" mat-raised-button color="primary">Iniciar Sesión</button>
+                    <button class="full-width" (click)="iniciarSesion()" mat-raised-button color="primary">Iniciar Sesión</button>
                 </div>
                 <div class="col-md-3"></div>
             </div>
