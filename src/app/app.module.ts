@@ -13,6 +13,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SearchComponent } from './components/search/search.component';
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { PlaylistCancionesComponent } from './pages/playlist-canciones/playlist-canciones.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 @NgModule({
   declarations: [
@@ -21,6 +27,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     GenerosInteresComponent,
     CancionesInteresComponent,
     FormularioRegistroComponent,
+    SearchComponent,
+    TarjetasComponent,
+    PlaylistCancionesComponent,
+    NoimagePipe,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,
@@ -32,6 +43,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatCardModule,
     MatInputModule,
     MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -4,6 +4,7 @@ import { InicioSesionComponent } from './pages/inicio-sesion/inicio-sesion.compo
 import { FormularioRegistroComponent } from './pages/formulario-registro/formulario-registro.component';
 import { GenerosInteresComponent } from './pages/generos-interes/generos-interes.component';
 import { CancionesInteresComponent } from './pages/canciones-interes/canciones-interes.component';
+import { PlaylistCancionesComponent } from './pages/playlist-canciones/playlist-canciones.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,11 @@ const routes: Routes = [
   {
     path: 'canciones-interes',
     component: CancionesInteresComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'playlist-canciones',
+    component: PlaylistCancionesComponent,
     pathMatch: 'full',
   },
 ];
