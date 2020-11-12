@@ -9,7 +9,7 @@ import { SpotifyService } from 'src/app/core/services/spotify.service';
 export class ArtistaComponent implements OnInit {
 
   artista: any = {};
-  topTracks: any[] = [];
+  topTracks;
   loadingArtista: boolean;
 
   constructor(
@@ -26,19 +26,14 @@ export class ArtistaComponent implements OnInit {
 
   getArtista(id: string): void {
 
-    this.loadingArtista = true;
-
     this.SPOTIFY.getArtista(id).subscribe(artista => {
-      console.log(artista);
       this.artista = artista;
-      this.loadingArtista = false;
     });
 
   }
 
   getTopTracks( id: string ): void {
     this.SPOTIFY.getTopTracks( id ).subscribe( topTracks => {
-      console.log(topTracks);
       this.topTracks = topTracks;
     });
   }

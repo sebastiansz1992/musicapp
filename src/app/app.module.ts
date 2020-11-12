@@ -19,6 +19,7 @@ import { PlaylistCancionesComponent } from './pages/playlist-canciones/playlist-
 import { HttpClientModule } from '@angular/common/http';
 import { NoimagePipe } from './pipes/noimage.pipe';
 import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { ArtistaComponent } from './components/artista/artista.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { DomseguroPipe } from './pipes/domseguro.pipe';
     SearchComponent,
     TarjetasComponent,
     PlaylistCancionesComponent,
+    ArtistaComponent,
     NoimagePipe,
     DomseguroPipe
   ],

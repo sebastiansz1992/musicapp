@@ -5,6 +5,7 @@ import { FormularioRegistroComponent } from './pages/formulario-registro/formula
 import { GenerosInteresComponent } from './pages/generos-interes/generos-interes.component';
 import { CancionesInteresComponent } from './pages/canciones-interes/canciones-interes.component';
 import { PlaylistCancionesComponent } from './pages/playlist-canciones/playlist-canciones.component';
+import { ArtistaComponent } from './components/artista/artista.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,11 @@ const routes: Routes = [
     component: PlaylistCancionesComponent,
     pathMatch: 'full',
   },
+  {
+    path: 'artist/:id',
+    component: ArtistaComponent,
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({

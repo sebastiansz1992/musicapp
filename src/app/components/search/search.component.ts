@@ -19,7 +19,6 @@ export class SearchComponent implements OnInit {
 
     this.SPOTIFY.getArtistas(termino)
       .subscribe((data: any) => {
-        console.log(data);
         this.artistas = data;
       });
 
